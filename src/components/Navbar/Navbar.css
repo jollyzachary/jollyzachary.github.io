@@ -1,0 +1,67 @@
+/* Navbar.css */
+.navbar-container {
+  position: relative;
+  top: 0;
+  right: -76%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding-top: 1.5em; /* Add padding to the entire navbar */
+}
+
+.nav__list {
+  margin-right: 1.5em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav__list-item {
+  margin-left: 1.5em;
+}
+
+.nav__list-item--theme {
+  margin-left: none;
+}
+
+.nav__list-item--hamburger {
+  display: none;
+}
+
+.app .nav__hamburger {
+  display: none;
+}
+
+.nav__theme {
+  margin-top: 0;
+  margin-right: 1.5em;
+  padding-bottom: 0.2em; /* Add padding to the toggle button */
+}
+
+@media (max-width: 600px) {
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .nav__list-item {
+    margin: 0.5em 0;
+  }
+
+  .app .nav__hamburger {
+    display: flex;
+    z-index: 2;
+    margin-left: 0.8em;
+  }
+
+  .nav__list-item--hamburger {
+    display: block;
+  }
+}
