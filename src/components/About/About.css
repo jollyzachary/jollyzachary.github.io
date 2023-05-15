@@ -29,8 +29,14 @@
   margin-right: 1em;
 }
 
+.profile-image {
+  width: 400px; /* Adjust the width as desired */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+}
+
+
 @media (max-width: 600px) {
-  .app .about {
+  .about {
     align-items: flex-start;
     margin-top: 2em;
   }

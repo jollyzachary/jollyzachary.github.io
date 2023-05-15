@@ -1,7 +1,8 @@
-import './Footer.css'
+import React from 'react';
+import './Footer.css';
 
-const Footer = () => (
-  <footer className='footer'>
+const Footer = ({ mode }) => (
+  <footer className={`footer ${mode}`}>
     <a
       href='https://github.com/jollyzachary'
       className='link footer__link'
@@ -9,6 +10,6 @@ const Footer = () => (
       Stoked
     </a>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

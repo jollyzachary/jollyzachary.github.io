@@ -52,14 +52,15 @@ const Navbar = () => {
           </Link>
         </li>
 
-        {/* Add the Experience section to the nav list */}
+
+        {/* Add the Education section to the nav list */}
         <li className='nav__list-item'>
           <Link
-            to='/experience'
+            to='/education'
             onClick={toggleNavList}
             className='link link--nav'
           >
-            Experience
+            Education
           </Link>
         </li>
 
@@ -110,3 +111,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

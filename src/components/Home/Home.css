@@ -151,3 +151,35 @@
     }
   }
   
+  .home {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .home__image {
+    flex: 1;
+    position: relative;
+    z-index: 0; /* Set the image to go back a layer */
+    pointer-events: auto; /* Allow the cursor effect to show up when hovering over the image */
+  }
+  
+  .home__image img {
+    max-width: 50%; /* Adjust the value to make the image smaller */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  .home__content {
+    flex: 1;
+    position: absolute;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    z-index: 1; /* Set the text to be on top */
+    padding: 20px; /* Adjust the value as needed */
+    background-color: transparent; /* Make the background transparent */
+    pointer-events: auto; /* Allow the cursor effect to show up when hovering over the text */
+  }
+  

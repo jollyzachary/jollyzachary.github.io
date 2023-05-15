@@ -19,24 +19,30 @@ const about = {
 
 const experience = [
   {
-    title: 'Job Title 1',
-    company: 'Company 1',
-    dates: 'Year 1 - Year 2',
-    description: 'Job description for job 1.',
+    title: 'Engineering Technician',
+    company: 'Milwaukee Tool',
+    dates: '2022 - Present',
+    description1: 'Developed a Python-based label generator program using CSV and openpyxl libraries, increasing efficiency by 80-90% and reducing labeling time.',
+    description2: 'Created a streamlined report generator using Python, pandas, and Matplotlib with Power BI analytics software, reducing report generation time by 85-90%.',
+    description3: 'Built a paperwork generator using Python, tkinter, pandas, and CSV for modifying and generating data entry based on a dynamically changing .xlsx Excel file.',
   },
   {
-    title: 'Job Title 2',
-    company: 'Company 2',
-    dates: 'Year 3 - Year 4',
-    description: 'Job description for job 2.',
+    title: 'Quality Technician II',
+    company: 'Generac Power Systems',
+    dates: '2020 - 2022',
+    description1: 'Utilized quality control equipment to collect and analyze data at each stage of production, ensuring product quality and compliance.',
+    description2: 'Identified areas for process improvement and implemented innovative techniques, leveraging data insights to drive decision-making.',
+    description3: 'Produced and maintained detailed inspection reports and test data, providing critical information for data-driven decision-making and continuous process improvement.',
   },
   {
-    title: 'Job Title 3',
-    company: 'Company 3',
-    dates: 'Year 5 - Year 6',
-    description: 'Job description for job 3.',
+    title: 'Team Lead',
+    company: 'RMB Products',
+    dates: '2017 - 2020',
+    description1: 'Utilized cutting-edge testing methodologies, including rigorous conductivity, pressure, and hydro testing, to ensure compliance with industry standards and maintain the highest level of product quality.',
+    description2: 'Leveraged data analysis techniques to identify trends and flaws in the manufacturing process, producing detailed reports to inform continuous process improvement efforts.',
+    description3: 'Conducted comprehensive three-stage inspections and audits of manufacturing processes, analyzing data to identify areas for improvement and ensure strict adherence to quality control standards.',
   },
-]
+];
 
 
 const projects = [
@@ -69,19 +75,96 @@ const projects = [
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Git'
+  {
+    title: 'Languages & Databases',
+    items: [
+      {
+        icon: 'images/skills/python.png',
+        title: 'Python',
+      },
+      {
+        icon: 'images/skills/js.png',
+        title: 'JavaScript',
+      },
+    ],
+  },
+  {
+    title: 'Frameworks & Technologies',
+    items: [
+      {
+        icon: 'images/skills/pytorch.png',
+        title: 'Pytorch',
+      },
+      {
+        icon: 'images/skills/react.png',
+        title: 'React',
+      },
+      {
+        icon: 'images/skills/nodejs.png',
+        title: 'Nodejs',
+      },
+      {
+        icon: 'images/skills/numpy.png',
+        title: 'Numpy',
+      },
+      {
+        icon: 'images/skills/openCV.png',
+        title: 'Open CV',
+      },
+      {
+        icon: 'images/skills/matplotlib.png',
+        title: 'Matplotlib',
+      },
+    ],
+  },
+  {
+    title: 'Tools & Platforms',
+    items: [
+      {
+        icon: 'images/skills/anaconda.png',
+        title: 'Anaconda',
+      },
+      {
+        icon: 'images/skills/git.png',
+        title: 'Git',
+      },
+      {
+        icon: 'images/skills/powerapps.png',
+        title: 'Microsoft Power Apps',
+      },
+      {
+        icon: 'images/skills/365.png',
+        title: 'Microsoft 365',
+      },
+    ],
+  },
 ]
+
+const education = [
+  {
+    title: '2023 - 2023',
+    cardTitle: 'Nanodegree, AI Programing with Python',
+    cardSubtitle: 'Udacity | School of Artificial Intelligence',
+    cardDetailedText: 'Certification',
+    icon: {
+      src: 'images/education/udacity.png',
+    },
+  },
+  {
+    title: '2021 - 2023',
+    cardTitle: 'Electrical Engineering Technology',
+    cardSubtitle: 'Waukesha County Technical College',
+    cardDetailedText: 'Associates',
+    icon: {
+      src: 'images/education/wctc.png',
+    },
+  },
+];
+
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
   email: 'zach.j.jolly@gmail.com',
 }
 
-export { header, about, projects, skills, contact, experience }
+export { header, about, projects, skills, contact, experience, education }
