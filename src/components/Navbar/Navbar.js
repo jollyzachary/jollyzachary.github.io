@@ -29,17 +29,6 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        {projects.length ? (
-          <li className='nav__list-item'>
-            <Link
-              to='/projects'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Projects
-            </Link>
-          </li>
-        ) : null}
 
         {/* Add the About section to the nav list */}
         <li className='nav__list-item'>
@@ -52,17 +41,17 @@ const Navbar = () => {
           </Link>
         </li>
 
-
-        {/* Add the Education section to the nav list */}
-        <li className='nav__list-item'>
-          <Link
-            to='/education'
-            onClick={toggleNavList}
-            className='link link--nav'
-          >
-            Education
-          </Link>
-        </li>
+        {projects.length ? (
+          <li className='nav__list-item'>
+            <Link
+              to='/projects'
+              onClick={toggleNavList}
+              className='link link--nav'
+            >
+              Projects
+            </Link>
+          </li>
+        ) : null}
 
         {skills.length ? (
           <li className='nav__list-item'>
@@ -75,6 +64,17 @@ const Navbar = () => {
             </Link>
           </li>
         ) : null}
+
+        {/* Add the Education section to the nav list */}
+        <li className='nav__list-item'>
+          <Link
+            to='/education'
+            onClick={toggleNavList}
+            className='link link--nav'
+          >
+            Education
+          </Link>
+        </li>
 
         {contact.email ? (
           <li className='nav__list-item'>
@@ -111,4 +111,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -24,13 +24,18 @@ const CursorTrail = (url) => {
     });
 
     const colors = [
-      'black',
-      'darkkhaki',
-      'darkslategray',
-      'darkgray',
-      'sapphire',
-      'Brown',
+      '#75725D',
+      '#1A1F1C',
+      '#2F9E88',
+      '#2E2B19',
+      '#8FA179',
+      '#323F30',
+      '#171818',
+      '#73612E',
+      '#141413',
+      '#8DD3C9',
     ];
+    
     
     const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 

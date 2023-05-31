@@ -1,14 +1,14 @@
 .footer {
-  position: absolute;
+  position: bottom;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 3em 0;
+  padding: 10em;
   text-align: center;
   background-color: var(--clr-bg);
   color: var(--clr-fg);
-  z-index: 1;
-  transition: background-color 0.2s ease-in-out;
+  z-index: 0;
+  transition: background-color;
 }
 
 .light .footer {
@@ -24,7 +24,8 @@
 
 @media (max-width: 600px) {
   .footer {
-    padding: 2em;
+    padding: 1em;
     margin-top: 3em;
+
   }
 }

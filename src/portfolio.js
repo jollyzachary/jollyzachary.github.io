@@ -7,7 +7,8 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Zachary Jolly',
-  role: 'Jr. Developer',
+  role1: 'Jr. Developer',
+  role2: 'Engineering Technician',
   description:
     'I am a passionate software developer with a background in engineering technician roles. I have completed certification courses in AI programming with Python and am committed to continuing my education and growth in the tech industry. With exceptional problem-solving abilities, attention to detail, and a deep-rooted passion for programming, I am excited to contribute to the development of innovative solutions and grow alongside a dynamic team.',
   resume: 'https://drive.google.com/file/d/1WAPpzo3lcrYrjGsepnOVpwbkV956lumz/view?usp=sharing',
@@ -49,28 +50,59 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Jr. Developer Portfolio',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A personal portfolio website built with JavaScript, CSS, HTML, and React showcasing my projects and skills.',
+    stack: ['React', 'JavaScript', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/jollyzachary/jollyzachary.github.io',
+    livePreview: 'https://jollyzachary.github.io/',
   },
   {
-    name: 'Project 2',
+    name: 'Pomodoro Clock',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A React.js-based Pomodoro Clock, providing a user-friendly interface for effective time management. Features adjustable work/break periods, real-time display, and audio cues.',
+    stack: ['React', 'JavaScript', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/jollyzachary/pomodoro-clock',
+    livePreview: 'https://codepen.io/jollyzachary/pen/oNaOXow',
   },
   {
-    name: 'Project 3',
+    name: 'Python Label Generator',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Comma automates the labeling of various items when coupled with a printhead, reducing labor and resources. It offers full customization to suit individual needs',
+    stack: ['Python'],
+    sourceCode: 'https://github.com/jollyzachary/comma-label-manager',
+  },
+  {
+    name: 'Calculator',
+    description:
+      'A functional calculator application built with JavaScript, HTML, and CSS. It supports basic arithmetic operations and provides a user-friendly interface.',
+    stack: ['JavaScript', 'CSS', 'HTML'],
+    sourceCode: 'https://github.com/jollyzachary/calculator',
+    livePreview: 'https://codepen.io/jollyzachary/pen/mdzgyzW',
+  },
+  {
+    name: 'Simple Drum Machine',
+    description:
+      'A simple and interactive drum machine built with React. It allows users to play different drum sounds by clicking buttons or pressing keys on their keyboard.',
+    stack: ['React', 'JavaScript', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/jollyzachary/simple_drum_machine',
+    livePreview: 'https://codepen.io/jollyzachary/pen/PoygwJp',
+  },
+  {
+    name: 'React Markdown Previewer',
+    description:
+      'A React-based Markdown Previewer that allows users to input Markdown text and see a real-time HTML preview.',
+    stack: ['React', 'JavaScript', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/jollyzachary/react_markdown_previewer',
+    livePreview: 'https://codepen.io/jollyzachary/pen/dygLyyK',
+  },
+  {
+    name: 'Random Quote Generator',
+    description:
+      'A Random Quote Generator that fetches and displays random quotes from an API. It also allows users to share the quotes on Twitter.',
+    stack: ['React', 'JavaScript', 'HTML', 'CSS'],
+    sourceCode: 'https://github.com/jollyzachary/ramdom_quote_generator',
+    livePreview: 'https://codepen.io/jollyzachary/pen/mdzgbNQ',
   },
 ]
 
@@ -163,8 +195,10 @@ const education = [
 
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
   email: 'zach.j.jolly@gmail.com',
+  phone: '+262-629-7819',
+  linkedin: 'https://www.linkedin.com/in/zachary-jolly-b18487132/',
 }
+
 
 export { header, about, projects, skills, contact, experience, education }

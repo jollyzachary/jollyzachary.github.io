@@ -1,7 +1,10 @@
 .about {
   flex-direction: column;
-  margin-top: 3em;
+  margin-top: 10em;
+  margin-bottom: 4em;
+  text-align: center;
 }
+
 
 .about__name {
   color: var(--clr-primary);
@@ -38,6 +41,6 @@
 @media (max-width: 600px) {
   .about {
     align-items: flex-start;
-    margin-top: 2em;
+    margin-top: em;
   }
 }

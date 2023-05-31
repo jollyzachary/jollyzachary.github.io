@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
@@ -7,8 +12,8 @@
 
 
 .light {
-  --clr-bg: #edecda;
-  --clr-bg-alt: #edecda;
+  --clr-bg: #efe5d3;
+  --clr-bg-alt: #efe5d3;
   --clr-fg: #555;
   --clr-fg-alt: #444;
   --clr-primary: #111;
@@ -16,7 +21,7 @@
 }
 
 .dark {
-  --clr-bg: #111;
+  --clr-bg: #0f1110;
   --clr-bg-alt: #f2eebb;
   --clr-fg: #ddd;
   --clr-fg-alt: #ccc;
