@@ -1,3 +1,4 @@
+import React from 'react'
 import uniqid from 'uniqid'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
@@ -18,29 +19,33 @@ const ProjectContainer = ({ project }) => (
       </ul>
     )}
 
-    {project.sourceCode && (
-      <a
-        href={project.sourceCode}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label='source code'
-        className='link link--icon'
-      >
-        <GitHubIcon />
-      </a>
-    )}
+    <div className='project__links'>
+      {project.sourceCode && (
+        <a
+          href={project.sourceCode}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='source code'
+          className='link link--icon project__link'
+        >
+          <GitHubIcon />
+        </a>
+      )}
 
-    {project.livePreview && (
-      <a
-        href={project.livePreview}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label='live preview'
-        className='link link--icon'
-      >
-        <LaunchIcon />
-      </a>
-    )}
+      {project.livePreview && (
+        <a
+          href={project.livePreview}
+          target='_blank'
+          rel='noopener noreferrer'
+          aria-label='live preview'
+          className='link link--icon project__link'
+        >
+          <LaunchIcon />
+        </a>
+      )}
+    </div>
+
+    <img src={project.image} alt={project.name} className='project__image' />
   </div>
 )
 

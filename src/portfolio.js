@@ -1,11 +1,9 @@
 const header = {
-  // all the properties are optional - can be left empty or deleted
   homepage: 'https://jollyzachary.github.io',
   title: 'Zachary.',
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
   name: 'Zachary Jolly',
   role1: 'Jr. Developer',
   role2: 'Engineering Technician',
@@ -47,8 +45,7 @@ const experience = [
 
 
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
+
   {
     name: 'Jr. Developer Portfolio',
     description:
@@ -56,6 +53,7 @@ const projects = [
     stack: ['React', 'JavaScript', 'HTML', 'CSS'],
     sourceCode: 'https://github.com/jollyzachary/jollyzachary.github.io',
     livePreview: 'https://jollyzachary.github.io/',
+    image: '/images/projects/portfolio.png',
   },
   {
     name: 'Pomodoro Clock',
@@ -64,6 +62,7 @@ const projects = [
     stack: ['React', 'JavaScript', 'HTML', 'CSS'],
     sourceCode: 'https://github.com/jollyzachary/pomodoro-clock',
     livePreview: 'https://codepen.io/jollyzachary/pen/oNaOXow',
+    image: '/images/projects/pomodoro_clock.png',
   },
   {
     name: 'Python Label Generator',
@@ -71,6 +70,7 @@ const projects = [
       'Comma automates the labeling of various items when coupled with a printhead, reducing labor and resources. It offers full customization to suit individual needs',
     stack: ['Python'],
     sourceCode: 'https://github.com/jollyzachary/comma-label-manager',
+    image: '/images/projects/label_generator.png',
   },
   {
     name: 'Calculator',
@@ -79,6 +79,7 @@ const projects = [
     stack: ['JavaScript', 'CSS', 'HTML'],
     sourceCode: 'https://github.com/jollyzachary/calculator',
     livePreview: 'https://codepen.io/jollyzachary/pen/mdzgyzW',
+    image: '/images/projects/calculator.png',
   },
   {
     name: 'Simple Drum Machine',
@@ -87,6 +88,7 @@ const projects = [
     stack: ['React', 'JavaScript', 'HTML', 'CSS'],
     sourceCode: 'https://github.com/jollyzachary/simple_drum_machine',
     livePreview: 'https://codepen.io/jollyzachary/pen/PoygwJp',
+    image: '/images/projects/simple_drum_machine.png',
   },
   {
     name: 'React Markdown Previewer',
@@ -95,6 +97,7 @@ const projects = [
     stack: ['React', 'JavaScript', 'HTML', 'CSS'],
     sourceCode: 'https://github.com/jollyzachary/react_markdown_previewer',
     livePreview: 'https://codepen.io/jollyzachary/pen/dygLyyK',
+    image: '/images/projects/react_markdown_previewer.png',
   },
   {
     name: 'Random Quote Generator',
@@ -103,6 +106,7 @@ const projects = [
     stack: ['React', 'JavaScript', 'HTML', 'CSS'],
     sourceCode: 'https://github.com/jollyzachary/ramdom_quote_generator',
     livePreview: 'https://codepen.io/jollyzachary/pen/mdzgbNQ',
+    image: '/images/projects/random_quote_generator.png',
   },
 ]
 

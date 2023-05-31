@@ -1,17 +1,39 @@
+/* ProjectContainer.css */
+
 .project {
   padding: 2em;
   margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project:hover {
   transform: translateY(-7px);
 }
 
+.project__image {
+  width: 80%; /* Add this to make the image width 60% of the container */
+  max-height: 300px; /* Adjust the height as per your requirement */
+  height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+  margin-bottom: 2em; /* Add some spacing below the image */
+}
+
 .project__description {
   margin-top: 1em;
+}
+
+.project__links {
+  display: flex; /* Add this to display the links side by side */
+  justify-content: center; /* Center the links horizontally */
+  margin-top: 1em; /* Add some spacing between the links and description */
+}
+
+.project__link {
+  margin: 0 0.5em; /* Add some spacing between the links */
 }
 
 .project__stack {
