@@ -9,7 +9,7 @@ const about = {
   role2: 'Engineering Technician',
   description:
     'I am a passionate software developer with a background in engineering technician roles. I have completed certification courses in AI programming with Python and am committed to continuing my education and growth in the tech industry. With exceptional problem-solving abilities, attention to detail, and a deep-rooted passion for programming, I am excited to contribute to the development of innovative solutions and grow alongside a dynamic team.',
-  resume: 'https://drive.google.com/file/d/1WAPpzo3lcrYrjGsepnOVpwbkV956lumz/view?usp=sharing',
+  resume: 'https://drive.google.com/file/d/1dMmzp5MuBQRpwHjjcGFXZJ5yRGvf8R7H/view?usp=sharing',
   social: {
     linkedin: 'https://www.linkedin.com/in/zachary-jolly-b18487132/',
     github: 'https://github.com/jollyzachary',
