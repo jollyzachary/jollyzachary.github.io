@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Threshold personal mark</title>
+  <desc id="desc">Three architectural deep-ink strokes forming two opposing open corners around a central horizon on warm ivory.</desc>
+  <rect width="1024" height="1024" rx="188" fill="#E5DED0"/>
+  <path d="M300 424V340H696" fill="none" stroke="#141210" stroke-width="76" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M270 512H754" fill="none" stroke="#141210" stroke-width="34" stroke-linecap="round"/>
+  <path d="M724 592V636C724 704 676 744 608 744H320" fill="none" stroke="#141210" stroke-width="76" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

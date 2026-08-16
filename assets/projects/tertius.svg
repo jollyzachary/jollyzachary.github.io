@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 640" role="img" aria-labelledby="title description">
+  <title id="title">Tertius</title>
+  <desc id="description">The Tertius spoken bloom above the words Tertius by Farynth. Speak. Tertius writes.</desc>
+  <rect width="1600" height="640" rx="28" fill="#EDE7DC"/>
+
+  <g transform="translate(800 212)" fill="#141210">
+    <path d="M0-142c50 38 60 93 0 142-60-49-50-104 0-142z"/>
+    <path d="M0-142c50 38 60 93 0 142-60-49-50-104 0-142z" transform="rotate(120)"/>
+    <path d="M0-142c50 38 60 93 0 142-60-49-50-104 0-142z" transform="rotate(240)"/>
+    <circle r="29" fill="#EDE7DC"/>
+  </g>
+
+  <text x="800" y="445" text-anchor="middle" fill="#141210"
+        font-family="Iowan Old Style, Baskerville, Georgia, serif"
+        font-size="92" font-weight="400" letter-spacing="28">TERTIUS</text>
+  <text x="800" y="500" text-anchor="middle" fill="#706B64"
+        font-family="Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="7">BY FARYNTH</text>
+  <line x1="610" y1="538" x2="990" y2="538" stroke="#CEC4B5" stroke-width="2"/>
+  <text x="800" y="583" text-anchor="middle" fill="#141210"
+        font-family="Arial, sans-serif" font-size="17" font-weight="500" letter-spacing="4">SPEAK. TERTIUS WRITES.</text>
+</svg>
