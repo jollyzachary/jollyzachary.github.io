@@ -1,1 +1,7 @@
+node_modules
+.svelte-kit
 build
+coverage
+dist
+static
+*.min.*

@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f1eae0" />
-		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-		%sveltekit.head%
-		<script>
-			try {
-				const saved = localStorage.getItem('zj-theme');
-				document.documentElement.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-			} catch (_) {}
-		</script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    %sveltekit.head%
+    <script>
+      try {
+        const saved = localStorage.getItem('zj-theme');
+        document.documentElement.dataset.theme =
+          saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch (_) {}
+    </script>
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">%sveltekit.body%</div>

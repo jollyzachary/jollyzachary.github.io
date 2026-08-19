@@ -7,9 +7,9 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      strict: true
-    })
-  }
+      strict: true,
+    }),
+  },
 };
 
 export default config;

@@ -16,9 +16,9 @@
       <p class="eyebrow">ZACHARY JOLLY</p>
       <h1>I figure<br />things out.</h1>
       <p class="minimal-intro">
-        I build software, work deeply with AI, and run research. I learn unfamiliar systems fast.
-        If I don’t know how to do something yet, I figure it out. Take a look at the Work tab to
-        see some of my recent projects.
+        I build software, work deeply with AI, and run research. I learn unfamiliar systems fast. If
+        I don’t know how to do something yet, I figure it out. Take a look at the Work tab to see
+        some of my recent projects.
       </p>
     </div>
 

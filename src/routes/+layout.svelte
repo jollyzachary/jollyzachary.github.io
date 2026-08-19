@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { onNavigate } from '$app/navigation';
+  import { resolve } from '$app/paths';
   import { page } from '$app/state';
   import '../App.css';
 
@@ -22,7 +23,10 @@
     root.style.setProperty('--theme-x', `${bounds.left + bounds.width / 2}px`);
     root.style.setProperty('--theme-y', `${bounds.top + bounds.height / 2}px`);
 
-    if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (
+      !document.startViewTransition ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
       applyTheme(next);
       return;
     }
@@ -40,9 +44,9 @@
 
   onNavigate((navigation) => {
     if (!document.startViewTransition) return;
-    return new Promise((resolve) => {
+    return new Promise((continueNavigation) => {
       document.startViewTransition(async () => {
-        resolve();
+        continueNavigation();
         await navigation.complete;
       });
     });
@@ -52,9 +56,15 @@
 <header class="site-nav">
   <span class="nav-spacer" aria-hidden="true"></span>
   <nav aria-label="Primary navigation">
-    <a href="/" aria-current={page.url.pathname === '/' ? 'page' : undefined}>HOME</a>
-    <a href="/work" aria-current={page.url.pathname.startsWith('/work') ? 'page' : undefined}>WORK</a>
-    <a href="/about" aria-current={page.url.pathname.startsWith('/about') ? 'page' : undefined}>ABOUT</a>
+    <a href={resolve('/')} aria-current={page.url.pathname === '/' ? 'page' : undefined}>HOME</a>
+    <a
+      href={resolve('/work')}
+      aria-current={page.url.pathname.startsWith('/work') ? 'page' : undefined}>WORK</a
+    >
+    <a
+      href={resolve('/about')}
+      aria-current={page.url.pathname.startsWith('/about') ? 'page' : undefined}>ABOUT</a
+    >
   </nav>
 
   <div class="nav-actions">
@@ -65,7 +75,12 @@
       aria-pressed={theme === 'dark'}
       onclick={toggleTheme}
     >
-      <span class="theme-icon" class:moon={theme === 'light'} class:sun={theme === 'dark'} aria-hidden="true"></span>
+      <span
+        class="theme-icon"
+        class:moon={theme === 'light'}
+        class:sun={theme === 'dark'}
+        aria-hidden="true"
+      ></span>
     </button>
   </div>
 </header>

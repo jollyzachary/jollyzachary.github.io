@@ -239,7 +239,8 @@
       if (!dragging || event.pointerId !== activePointer) return;
 
       dragging = false;
-      if (portrait.hasPointerCapture(event.pointerId)) portrait.releasePointerCapture(event.pointerId);
+      if (portrait.hasPointerCapture(event.pointerId))
+        portrait.releasePointerCapture(event.pointerId);
       activePointer = -1;
 
       const idleTime = Math.max(0, performance.now() - lastPointerTime);

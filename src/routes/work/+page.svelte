@@ -12,8 +12,7 @@
     <div class="work-title-row">
       <h1>Things I’ve built.</h1>
       <p>
-        Recent projects shaped around useful tools, local AI, and better ways to
-        work with machines.
+        Recent projects shaped around useful tools, local AI, and better ways to work with machines.
       </p>
     </div>
   </header>
@@ -35,8 +34,8 @@
         <div class="project-card-copy">
           <h2>Mneme <span>Memory MCP</span></h2>
           <p>
-            Shared, inspectable memory that gives AI agents continuity across
-            tools and conversations.
+            Shared, inspectable memory that gives AI agents continuity across tools and
+            conversations.
           </p>
         </div>
 
@@ -46,7 +45,7 @@
           </div>
           <div class="project-motion memory-register" aria-hidden="true">
             <div class="memory-rail"></div>
-            {#each Array(5) as _, index}
+            {#each Array(5) as _, index (index)}
               <span style={`--cell: ${index}`}></span>
             {/each}
             <i></i>
@@ -75,8 +74,8 @@
         <div class="project-card-copy">
           <h2>Tertius <span>Voice to text</span></h2>
           <p>
-            A fast, private desktop dictation app that turns natural speech into
-            clean text using local AI.
+            A fast, private desktop dictation app that turns natural speech into clean text using
+            local AI.
           </p>
         </div>
 
@@ -86,7 +85,7 @@
           </div>
           <div class="project-motion dictation-machine" aria-hidden="true">
             <div class="dictation-wave">
-              {#each [10, 19, 30, 16, 24] as height, index}
+              {#each [10, 19, 30, 16, 24] as height, index (index)}
                 <span style={`--bar: ${index}; --height: ${height}px`}></span>
               {/each}
             </div>
@@ -116,17 +115,14 @@
         <div class="project-card-copy">
           <h2>Image <span>Classifier Engine</span></h2>
           <p>
-            A reusable vision engine for scene analysis, open-vocabulary
-            classification, and transfer learning.
+            A reusable vision engine for scene analysis, open-vocabulary classification, and
+            transfer learning.
           </p>
         </div>
 
         <div class="project-showcase">
           <div class="project-media project-media-contain">
-            <img
-              src="/assets/projects/image-classifier.png"
-              alt="Classifier Engine vision mark"
-            />
+            <img src="/assets/projects/image-classifier.png" alt="Classifier Engine vision mark" />
           </div>
           <div class="project-motion classifier-scan" aria-hidden="true">
             <span></span><i></i>
@@ -155,8 +151,8 @@
         <div class="project-card-copy">
           <h2>Snow <span>Weather</span></h2>
           <p>
-            Live forecasts and condition-driven animation, kept simple and
-            elegant. I just love Svelte.
+            Live forecasts and condition-driven animation, kept simple and elegant. I just love
+            Svelte.
           </p>
         </div>
 
@@ -166,7 +162,7 @@
           </div>
           <div class="project-motion weather-atmosphere" aria-hidden="true">
             <span></span><span></span><span></span>
-            {#each [22, 51, 76] as left, index}
+            {#each [22, 51, 76] as left, index (left)}
               <i style={`--flake: ${left}%; --delay: ${index * -370}ms`}></i>
             {/each}
           </div>
